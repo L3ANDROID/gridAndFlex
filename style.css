@@ -38,11 +38,6 @@ body {
   grid-column-start: span 2;
 }
 
-@media (min-width: 768px) {
-  .gridContainer {
-  }
-}
-
 /* css flexbox */
 
 .flexboxContainer {
@@ -55,6 +50,7 @@ body {
 .row {
   display: flex;
   padding: 5px;
+  height: 100%;
 }
 
 .column{
@@ -62,5 +58,17 @@ body {
   width: 30%;
   height: 100%;
   padding: 5px;
+}
+
+@media (max-width: 900px){
+
+  .row{
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .column{
+    flex: 50%;
+  }
 }
 
