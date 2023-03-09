@@ -79,6 +79,7 @@ body {
 
   .column{
     flex: 50%;
+    height: auto;
   }
 }
 
